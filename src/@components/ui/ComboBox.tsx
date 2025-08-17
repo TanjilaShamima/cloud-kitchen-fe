@@ -11,7 +11,7 @@ interface ComboBoxProps {
   label: string;
   size?: "md" | "lg";
   variant?: "standard" | "outlined" | "static";
-  handleChange?: (value: string) => void;
+  handleChange?: (value: string | undefined) => void;
 }
 
 export default function ComboBox({ items, label, size, variant = "outlined", handleChange }: ComboBoxProps) {
@@ -26,11 +26,14 @@ export default function ComboBox({ items, label, size, variant = "outlined", han
       size={size}
       selected={(element) =>
         element &&
-        React.cloneElement(element, {
-          disabled: true,
-          className:
-            "flex items-center opacity-100 px-0 gap-2 pointer-events-none",
-        })
+        React.cloneElement(
+          element as React.ReactElement<any>,
+          {
+            // disabled: true,
+            className:
+              "flex items-center opacity-100 px-0 gap-2 pointer-events-none",
+          }
+        )
       }
       onChange={handleChange}
     >
