@@ -1,0 +1,78 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/@components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@material-tailwind/react/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: "var(--primary)",
+        disabled: "var(--disabled)",
+        borderColor: "var(--stroke)",
+        darkblue: "var(--dark-blue-black)",
+        dolphin: "var(--dolphin)",
+        logout: "var(--logout-black)",
+        error: "var(--american-rose)",
+        whiteSmoke: "var( --white-smoke)",
+        avatar: "var(--avatar)",
+        "subtle-pink": "var(--subtle-pink)",
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        stroke: "var(--stroke)",
+        lightGray: "var(--light-gray)",
+        "dusty-gray-shape": "var(--dusty-gray-shape)",
+        "shades-grey-default": "var(--shades-grey-default)",
+        tertiary: "#E2E2E2",
+        zambezi: "#5A5A5A",
+        matterhorm: "#525252",
+        "black-russian": "var(--black-russian)",
+        "light-blue": "#e9f8ff",
+        "dark-black": "#000000",
+        "light-black": "#262E37",
+        "night-rider-black": "#323232",
+        "light-primary": "#00A8FF1A",
+        "dark-gray": "var(--dark-gray)",
+        "light-gray-shade": "var(--light-gray-shade)",
+        "light-pink-shade": "var(--light-pink-shade)",
+        "whisper-gray": "#e7e7e7",
+        amber: "var(--amber)",
+        snowflake: "var(--snowflake)",
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        "white-smoke": "var(--white-smoke)",
+      },
+      backgroundImage: {
+        "primary-gradient": "linear-gradient(90deg, #EA005E 0%, #ED4554 100%)",
+      },
+      boxShadow: {
+        "auth-card": "0px 4px 50px 0px rgba(0, 0, 0, 0.06)",
+      },
+    },
+  },
+  plugins: [],
+};

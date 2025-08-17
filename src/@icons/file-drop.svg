@@ -1,0 +1,16 @@
+<svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32.5" cy="32.5" r="32" fill="#FFEAF2" stroke="#FFC1D9"/>
+<mask id="mask0_11943_3055" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="63" height="63">
+<circle cx="32.5" cy="32.5" r="31" fill="#FFEAF2" stroke="#FFEAF2"/>
+</mask>
+<g mask="url(#mask0_11943_3055)">
+<rect x="12.7512" y="18" width="38.75" height="48.5" rx="3.5" fill="white" stroke="#FFC1D9"/>
+<rect x="18.2505" y="22" width="18" height="3" rx="1.5" fill="#FFEAF2"/>
+<rect x="18.2505" y="56.5" width="17.25" height="4.5" rx="2.25" fill="#FFEAF2"/>
+<rect x="18.7505" y="28.5" width="28.25" height="24.5" rx="3.5" fill="#FFEAF2" stroke="#FF2F80" stroke-dasharray="4 4"/>
+<path d="M30.5001 44.333V40.333L29.1667 41.6663" stroke="#FF2F80" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.5 40.333L31.8333 41.6663" stroke="#FF2F80" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39.1666 39.6663V42.9997C39.1666 46.333 37.8333 47.6663 34.4999 47.6663H30.4999C27.1666 47.6663 25.8333 46.333 25.8333 42.9997V38.9997C25.8333 35.6663 27.1666 34.333 30.4999 34.333H33.8333" stroke="#FF2F80" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39.1666 39.6663H36.4999C34.4999 39.6663 33.8333 38.9997 33.8333 36.9997V34.333L39.1666 39.6663Z" stroke="#FF2F80" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

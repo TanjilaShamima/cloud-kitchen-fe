@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: #EA005E;
+    --primary-foreground: #FAFCFF;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: #EA005E;
+
+    --radius: 0.5rem;
+    --stroke: #ccc;
+    --dark-gray: #afafaf;
+    --black-russian: #0d0c22;
+    --dolphin: #6e6d7a;
+    --disabled: #a0acbd;
+    --dark-blue-black: #0d0c22;
+    --american-rose: #f9214a;
+    --avatar: #e8f5fb;
+    --subtle-pink: #fef2f7;
+    --white-smoke: #f5f5f5;
+    --logout-black: #2b2b2b;
+    --light-gray: #a2a5b1;
+    --snowflake: #f0f0f0;
+    --dusty-gray-shape: #707070;
+    --shades-grey-default: #979797;
+    --light-gray-shade: #424242;
+    --light-pink-shade: #E746941A;
+    --amber: #FFC107;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: #EA005E;
+    --primary-foreground: #FAFCFF;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: #EA005E;
+
+    --radius: 0.5rem;
+    --stroke: #ccc;
+    --dark-gray: #afafaf;
+    --black-russian: #0d0c22;
+    --dolphin: #6e6d7a;
+    --disabled: #a0acbd;
+    --dark-blue-black: #0d0c22;
+    --american-rose: #f9214a;
+    --avatar: #e8f5fb;
+    --subtle-pink: #fef2f7;
+    --white-smoke: #f5f5f5;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #ededed; */
+    --foreground: #ffffff;
+    --foreground: #0a0a0a
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  width: 32px;
+  height: 32px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 4px;
+  border: none;
+}
+
+
+.material-label-top-border-override:after {
+  border-top-width: 1px !important;
+  border-right-width: 0px !important;
+}
+
+.material-label-top-border-override:before {
+  border-top-width: 1px !important;
+  border-left-width: 0px !important;
+
+}
+
+.material-input-top-border-override:focus {
+  border-top-color: unset !important;
+}
+
+.material-input-override {
+  border-top-color: rgb(176 190 197) !important;
+}
+
+.material-input-error-override {
+  border-top-color: rgb(244 67 54) !important;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  @apply text-primary border-primary ring-primary accent-primary;
+}
+
+
+
+.loader {
+  border-top-color: blue;
+  animation: spin 1s linear infinite;
+}
+
+/* @layer utilities {
+
+  .clip-your-needful-style {
+
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+  }
+
+} */
+
+/* .no-scrollbar::-webkit-scrollbar {
+  display: none;
+} */
+/* .no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */
+
